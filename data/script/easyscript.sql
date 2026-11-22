@@ -39,3 +39,32 @@ ORDER BY
 	creditLimit desc;
 
 
+-- 4. Tampilkan productCode, productName, productLine, dan buyPrice dari tabel products untuk produk dengan buyPrice di antara 50 sampai 70 (inklusif). Urutkan berdasarkan buyPrice menurun, lalu productCode menaik.
+SELECT
+	productCode,
+	productName,
+	productLine,
+	buyPrice
+FROM
+	products
+WHERE
+	buyPrice BETWEEN 50 and 70
+ORDER BY
+	buyPrice DESC,
+	productCode ASC;
+
+-- 5. Tampilkan productCode, productName, dan productScale dari tabel products untuk produk yang namanya (productName) diawali dengan '196'. Urutkan berdasarkan productName secara menaik.
+
+SELECT
+	productCode,
+	productName,
+	productScale
+FROM
+	products
+WHERE
+	productName LIKE '196%'
+ORDER BY
+	productName ASC ;
+
+-- 6. 
+
